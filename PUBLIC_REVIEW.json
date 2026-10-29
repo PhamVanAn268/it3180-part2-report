@@ -17,6 +17,11 @@
   "limitations": "Known-value and heuristic scan; not proof of absence of all historical secrets or PII. Browser/deployment verification recorded separately. Manifest lists all public files except itself; hashes are integrity evidence, not digital signatures.",
   "files": [
     {
+      "path": ".gitattributes",
+      "bytes": 77,
+      "sha256": "10b660cdc5bc408291d7640cf56e47f627926efcf1c1703bebb09a18634ebc9e"
+    },
+    {
       "path": ".gitignore",
       "bytes": 22,
       "sha256": "51c21ea08a4e9b4d68cd7e01985caeb61840d9abbb3ccef8336e61790975a3d3"
