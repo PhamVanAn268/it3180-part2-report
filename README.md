@@ -3,6 +3,7 @@
 Website báo cáo tiếng Việt về repository BlueMoon Nhóm 7 được chọn từ ví dụ trong tài liệu. Chưa có xác nhận phân công từ giảng viên.
 
 - Website: https://phamvanan268.github.io/it3180-part2-report/
+- PDF trực tiếp: https://phamvanan268.github.io/it3180-part2-report/IT3180_Phan2_BaoCao.pdf
 - Repository: https://github.com/PhamVanAn268/it3180-part2-report
 - Snapshot phân tích: `52d05923806666d3810df5074932145ea2058e4b`.
 

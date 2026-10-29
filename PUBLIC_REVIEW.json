@@ -32,9 +32,14 @@
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
+      "path": "IT3180_Phan2_BaoCao.pdf",
+      "bytes": 344028,
+      "sha256": "21c6440b400490e2c90aa2d02b764a76b351b0aea6fcaf92bcb03a3b6bbee386"
+    },
+    {
       "path": "README.md",
-      "bytes": 1468,
-      "sha256": "ca249b5f430888af4349a8915b475d2926f73bcec1cec168fbc21cc158c949c3"
+      "bytes": 1565,
+      "sha256": "79846b89b0c47d67bbdd27d67d9db57178cd54376c8a724d84177369061de515"
     },
     {
       "path": "app.js",
@@ -78,8 +83,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 63428,
-      "sha256": "6b246c009df009c20ecdf4f3e35f971fd9551486a805fabc2ccecc77835b7d73"
+      "bytes": 63541,
+      "sha256": "a0874f397f49342f52731191fdc1fd2e7482b9bf136c5140ed07f7e627e59d7e"
     },
     {
       "path": "styles.css",
