@@ -1,0 +1,85 @@
+{
+  "A01": {
+    "commits": 2,
+    "added": 25,
+    "removed": 3,
+    "net": 22,
+    "unique_files": 2,
+    "first": "2026-04-09",
+    "last": "2026-07-03",
+    "active_days": 2,
+    "roles_file_touches": {
+      "Documentation": 2,
+      "Configuration/other": 1
+    },
+    "binary_entries": 0
+  },
+  "A02": {
+    "commits": 91,
+    "added": 32596,
+    "removed": 14730,
+    "net": 17866,
+    "unique_files": 279,
+    "first": "2026-05-27",
+    "last": "2026-06-27",
+    "active_days": 17,
+    "roles_file_touches": {
+      "Backend": 554,
+      "Frontend": 269,
+      "Documentation": 6,
+      "Configuration/other": 2
+    },
+    "binary_entries": 6
+  },
+  "A03": {
+    "commits": 6,
+    "added": 15799,
+    "removed": 54856,
+    "net": -39057,
+    "unique_files": 398,
+    "first": "2026-06-04",
+    "last": "2026-06-10",
+    "active_days": 2,
+    "roles_file_touches": {
+      "Backend": 1,
+      "Frontend": 399,
+      "Configuration/other": 3,
+      "Documentation": 3,
+      "Test": 1
+    },
+    "binary_entries": 46
+  },
+  "A04": {
+    "commits": 14,
+    "added": 2803,
+    "removed": 861,
+    "net": 1942,
+    "unique_files": 53,
+    "first": "2026-05-29",
+    "last": "2026-06-06",
+    "active_days": 7,
+    "roles_file_touches": {
+      "Backend": 108,
+      "Documentation": 1
+    },
+    "binary_entries": 0
+  },
+  "A05": {
+    "commits": 19,
+    "added": 56351,
+    "removed": 382,
+    "net": 55969,
+    "unique_files": 415,
+    "first": "2026-04-09",
+    "last": "2026-06-04",
+    "active_days": 6,
+    "roles_file_touches": {
+      "Backend": 115,
+      "Documentation": 3,
+      "Frontend": 322,
+      "Test": 2,
+      "Configuration/other": 3
+    },
+    "binary_entries": 47
+  }
+}

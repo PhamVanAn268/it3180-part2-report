@@ -1,0 +1,92 @@
+{
+  "status": "ASSUMPTION based on PDF example; NOT confirmed by group; no mailmap applied",
+  "mapping": {
+    "A01+A05": [
+      "A01",
+      "A05"
+    ],
+    "A02": [
+      "A02"
+    ],
+    "A03": [
+      "A03"
+    ],
+    "A04": [
+      "A04"
+    ]
+  },
+  "source": "unique SHA and author date from sanitized gitlog_full.txt; numeric numstat and path union recounted locally from git show; raw paths not exported",
+  "path_union": {
+    "a01": 2,
+    "a05": 415,
+    "intersection": 0,
+    "union": 417
+  },
+  "authors": {
+    "A01+A05": {
+      "commits": 21,
+      "added": 56376,
+      "removed": 385,
+      "net": 55991,
+      "unique_files": 417,
+      "first": "2026-04-09",
+      "last": "2026-07-03",
+      "active_days": 7,
+      "binary_entries": 47,
+      "weekly": {
+        "2026-W15": 5,
+        "2026-W22": 10,
+        "2026-W23": 5,
+        "2026-W27": 1
+      }
+    },
+    "A02": {
+      "commits": 91,
+      "added": 32596,
+      "removed": 14730,
+      "net": 17866,
+      "unique_files": 279,
+      "first": "2026-05-27",
+      "last": "2026-06-27",
+      "active_days": 17,
+      "binary_entries": 6,
+      "weekly": {
+        "2026-W22": 8,
+        "2026-W23": 38,
+        "2026-W24": 41,
+        "2026-W25": 2,
+        "2026-W26": 2
+      }
+    },
+    "A03": {
+      "commits": 6,
+      "added": 15799,
+      "removed": 54856,
+      "net": -39057,
+      "unique_files": 398,
+      "first": "2026-06-04",
+      "last": "2026-06-10",
+      "active_days": 2,
+      "binary_entries": 46,
+      "weekly": {
+        "2026-W23": 5,
+        "2026-W24": 1
+      }
+    },
+    "A04": {
+      "commits": 14,
+      "added": 2803,
+      "removed": 861,
+      "net": 1942,
+      "unique_files": 53,
+      "first": "2026-05-29",
+      "last": "2026-06-06",
+      "active_days": 7,
+      "binary_entries": 0,
+      "weekly": {
+        "2026-W22": 7,
+        "2026-W23": 7
+      }
+    }
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "status": "PASS_SCOPED_PREPUBLICATION_CHECKS",
+  "review_date": "2026-10-29 Asia/Bangkok",
+  "checks": {
+    "allowlist": true,
+    "source_evidence_byte_match": true,
+    "local_links": true,
+    "vietnamese_document": true,
+    "tables": 14,
+    "charts": 2,
+    "source_totals": true,
+    "known_secret_values_checked": 4,
+    "known_author_committer_emails_checked": 7,
+    "sensitive_matches": 0,
+    "external_runtime_dependencies": false
+  },
+  "limitations": "Known-value and heuristic scan; not proof of absence of all historical secrets or PII. Browser/deployment verification recorded separately. Manifest lists all public files except itself; hashes are integrity evidence, not digital signatures.",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 22,
+      "sha256": "51c21ea08a4e9b4d68cd7e01985caeb61840d9abbb3ccef8336e61790975a3d3"
+    },
+    {
+      "path": ".nojekyll",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1468,
+      "sha256": "ca249b5f430888af4349a8915b475d2926f73bcec1cec168fbc21cc158c949c3"
+    },
+    {
+      "path": "app.js",
+      "bytes": 1216,
+      "sha256": "01e40c8bc375b837952ee07f06dee3f39b21cb8fd04509c8d23940a2fc500451"
+    },
+    {
+      "path": "evidence/C_REVIEW_EVIDENCE.md",
+      "bytes": 7580,
+      "sha256": "c74dbf9bb4847f838c043e1d8f811bb3a2396851be230198bb893f027f9ca69f"
+    },
+    {
+      "path": "evidence/REPO_ANALYSIS.md",
+      "bytes": 20292,
+      "sha256": "b74cc162d0ed0a1df10ff260b222974d41e3bae251f26bd35f5ba0d3eba97d9a"
+    },
+    {
+      "path": "evidence/REVIEW_COMMAND_RESULTS.json",
+      "bytes": 2152,
+      "sha256": "930ef333202b6bbfa8293f3b8e436e063b00878d70dbe514f463967601db0195"
+    },
+    {
+      "path": "evidence/VALIDATION.md",
+      "bytes": 9188,
+      "sha256": "9fe3fee4a542b51372b2bcfe8e5fdc46b508ba4e2008c2859d13e43c5ddc850a"
+    },
+    {
+      "path": "evidence/author-stats.json",
+      "bytes": 1781,
+      "sha256": "7efc9272b8d8472bb142745657b534838fdc209b92867a96b76ae7198fc1b334"
+    },
+    {
+      "path": "evidence/merged-identity-stats.json",
+      "bytes": 1993,
+      "sha256": "d515f3c94f3b57e4eb918bf667102abbbc7bc729222088cc09f9c28e3a8c4c35"
+    },
+    {
+      "path": "evidence/weekly.json",
+      "bytes": 370,
+      "sha256": "76c9fb28b7379915e1402571b2dee497c426daa5a25fb8e63b02fc5e93cd5bdc"
+    },
+    {
+      "path": "index.html",
+      "bytes": 63428,
+      "sha256": "6b246c009df009c20ecdf4f3e35f971fd9551486a805fabc2ccecc77835b7d73"
+    },
+    {
+      "path": "styles.css",
+      "bytes": 11535,
+      "sha256": "a62fb624843bef0cd6f9d898d95d95ce80c912fee535e2679adc92a8c3378d88"
+    }
+  ]
+}
