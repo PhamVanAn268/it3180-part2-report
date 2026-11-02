@@ -1,6 +1,6 @@
 # IT3180 — Báo cáo Phần 2 C5.5
 
-Người thực hiện: **Phạm Văn An — MSSV 202417226**. PDF cập nhật ngày 02/11/2026 theo bố cục I–IV của mẫu được cung cấp; giữ số liệu và giới hạn bằng chứng đã kiểm chứng.
+Người thực hiện: **Phạm Văn An — MSSV 202417226**. Báo cáo thực hành Phần 2 theo bố cục I–IV, hoàn thiện ngày 02/11/2026.
 
 Website báo cáo tiếng Việt về repository BlueMoon Nhóm 7 được chọn từ ví dụ trong tài liệu. Chưa có xác nhận phân công từ giảng viên.
 
