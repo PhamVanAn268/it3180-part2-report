@@ -1,12 +1,12 @@
 # Phân tích repository BlueMoon — Phần 2 C5.5
 
-**Báo cáo phân tích repository được chọn từ ví dụ trong tài liệu C5.5 (Nhóm 7). Chưa có xác nhận phân công từ giảng viên.** Nguồn: https://github.com/neveraccept/IT3180_2025.2_Nhom7, snapshot `52d05923806666d3810df5074932145ea2058e4b`, ngày phiên làm việc 2026-10-29 (Asia/Bangkok). Không phân tích AIMS-mini thay cho đồ án khóa trước.
+**Báo cáo phân tích repository được chọn từ ví dụ trong tài liệu C5.5 (Nhóm 7). Chưa có xác nhận phân công từ giảng viên.** Nguồn: https://github.com/neveraccept/IT3180_2025.2_Nhom7, snapshot `52d05923806666d3810df5074932145ea2058e4b`, ngày thu thập dữ liệu 2026-10-29 (Asia/Bangkok). Không phân tích AIMS-mini thay cho đồ án khóa trước.
 
 Phạm vi: 270 tệp đang được quản lý, mọi ref đã clone, 132 SHA commit không phải merge được đếm đúng một lần; 46 merge commit không đưa vào bảng LOC. Có 20 PR được API trả về, 19 MERGED (`pr-metadata.json`). Không cài dependency, chạy ứng dụng, đăng nhập thử hoặc push repo mục tiêu. Phân tích tĩnh không chứng minh build/test của đồ án đang chạy thành công.
 
 ## Vai trò và an toàn dữ liệu
 
-Áp dụng Prompt 0: chỉ nêu nhận xét có đường dẫn/SHA/số liệu; tách dữ liệu khỏi suy luận; không xếp hạng thành viên. Các tác giả dùng mã A01–A05; email thay bằng mã băm ổn định. Tên/email gốc chỉ có trong đề xuất mailmap private cục bộ, không đưa vào báo cáo chia sẻ và không áp dụng vào repo.
+Áp dụng Prompt 0: chỉ nêu nhận xét có đường dẫn/SHA/số liệu; tách dữ liệu khỏi suy luận; không xếp hạng thành viên. Các tác giả dùng mã A01–A05; email thay bằng mã băm ổn định. Bản công bố không đưa tên/email gốc hoặc áp dụng mapping chưa xác nhận vào repository.
 
 Đã scan 1.196 blob văn bản và loại 52 blob binary khỏi đầu vào AI. `SECURITY_SCAN.json` ghi 2.143 dòng ứng viên theo heuristic, không phải 2.143 secret thật: regex cũng khớp tên biến/import. Có **4 cấu hình credential dạng literal không rỗng** tại `Backend/src/main/resources/application.properties:8,16,32,38`; giá trị được che và không thử xác thực. `Frontend/.env` từng xuất hiện trong commit lịch sử `3f80b038`. Không kết luận giá trị còn hiệu lực. Cần chủ repo kiểm tra, thu hồi/rotate nếu cần, chuyển cấu hình sang môi trường và cung cấp file mẫu an toàn; thêm ignore không xóa dữ liệu đã nằm trong Git. Không tự sửa repo của nhóm.
 
@@ -63,7 +63,7 @@ Không sao chép điểm mẫu trong PDF: điểm quản lý cấu hình giảm 
 
 ## B1 — Danh tính trước khi tổng hợp
 
-`tacgia.txt` và `email_ten.txt` giữ quan hệ email–tên bằng mã giả; 5 cặp author name/email, không mặc định là 5 người. A01/A05 trùng tên chuẩn hóa nhưng email khác: **chỉ là ứng viên cùng người**, chưa gộp vào bảng chính. `identity-proposals.json` và `mailmap.proposed.txt` ghi đề xuất; file mailmap thật chỉ ở private local, các mapping đang comment. Cần nhóm xác nhận email/noreply trước khi áp dụng. Không coi cùng tên là bằng chứng đủ về nhân thân.
+`tacgia.txt` và `email_ten.txt` giữ quan hệ email–tên bằng mã giả; 5 cặp author name/email, không mặc định là 5 người. A01/A05 trùng tên chuẩn hóa nhưng email khác: **chỉ là ứng viên cùng người**, chưa gộp vào bảng chính. `identity-proposals.json` và `mailmap.proposed.txt` ghi đề xuất; mapping chưa được áp dụng vào repository. Cần nhóm xác nhận email/noreply trước khi áp dụng. Không coi cùng tên là bằng chứng đủ về nhân thân.
 
 ## B2 — Phương pháp số liệu
 
@@ -71,7 +71,7 @@ Lệnh nền: `git log --all --no-merges --numstat --date=short --pretty=format:
 
 Tổng thực: 132 commits, +107.574/−70.832, net +36.742. `git rev-list --all --no-merges` đối chiếu đúng 132. Số liệu có thể chứa mã thư viện/template, file lock, generated text hoặc nội dung chỉnh sửa nhiều lần; không đo chất lượng hay giờ làm.
 
-**Giới hạn export đã che:** bảy commit có dòng numstat bị bộ lọc an toàn loại khỏi `gitlog_full.txt`. Do đó không cộng lại toàn bộ LOC/unique paths chỉ từ export này. Phiên hoàn thiện đã đọc numstat của cả 132 SHA bằng Git cục bộ và xác nhận bảng năm danh tính; chỉ xuất số an toàn. `REVIEW_COMMAND_RESULTS.json` ghi lệnh và các SHA bị ảnh hưởng. Không khôi phục đường dẫn nhạy cảm vào gói nộp.
+**Giới hạn export đã che:** bảy commit có dòng numstat bị bộ lọc an toàn loại khỏi `gitlog_full.txt`. Do đó không cộng lại toàn bộ LOC/unique paths chỉ từ export này. Numstat của cả 132 SHA đã được đối chiếu bằng Git cục bộ, xác nhận bảng năm danh tính; chỉ xuất số an toàn. `REVIEW_COMMAND_RESULTS.json` ghi lệnh và các SHA bị ảnh hưởng. Không khôi phục đường dẫn nhạy cảm vào gói nộp.
 
 ## B3 — Bảng dữ liệu, không xếp hạng
 
@@ -115,7 +115,7 @@ Tổng theo tuần khớp 21/91/6/14 commit; tổng hai bảng cùng là 132 com
 | A03 | 15.646 / 54.828 / −39.182 | 15.799 / 54.856 / −39.057 | +153 / +28 / +125 |
 | A04 | 2.795 / 853 / +1.942 | 2.803 / 861 / +1.942 | +8 / +8 / 0 |
 
-Số commit theo kịch bản đều khớp ví dụ (21/91/6/14); LOC không hoàn toàn khớp. PDF không ghi đủ cấu hình Git/diff/rename, refs và phiên bản xuất để xác định nguyên nhân. Khác biệt snapshot, refs hoặc cách diff là các khả năng cần đối chiếu, **chưa được chứng minh là nguyên nhân**. Không sửa số thực để khớp ví dụ. Đối chiếu dùng bản trích xuất đồng hành `IT3180_AI_Part2_reference.txt`, phần B trang 6–7; phiên rà soát này chưa render PDF trực tiếp do thiếu thư viện PDF, không suy diễn nội dung hình.
+Số commit theo kịch bản đều khớp ví dụ (21/91/6/14); LOC không hoàn toàn khớp. PDF không ghi đủ cấu hình Git/diff/rename, refs và phiên bản xuất để xác định nguyên nhân. Khác biệt snapshot, refs hoặc cách diff là các khả năng cần đối chiếu, **chưa được chứng minh là nguyên nhân**. Không sửa số thực để khớp ví dụ. Đối chiếu dùng bản trích xuất đồng hành `IT3180_AI_Part2_reference.txt`, phần B trang 6–7; số liệu thực đo được giữ nguyên khi khác với ví dụ trong tài liệu.
 
 ### Loại công việc quan sát qua đường dẫn
 
@@ -178,6 +178,6 @@ Ví dụ rõ theo heuristic: A01 `52d05923` “Update project course code from I
 
 ## C — Phản biện AI
 
-`VALIDATION.md` ghi kiểm chứng nguồn gốc và giới hạn. `C_REVIEW_EVIDENCE.md` lưu prompt/nội dung tự phân tích được ghi trong phiên rà soát 2026-10-29 và lệnh đối chiếu; không có transcript gốc để xác minh hai lượt cũ. Ba kết luận không đủ bằng chứng: “người có nhiều dòng tự viết nhiều nhất”, “net âm là phá code”, “ít commit nghĩa là ít làm/không review”. Cần thông tin template, diff/tests/demo, phân công, review, tài liệu và phỏng vấn; Git không chứng minh báo cáo/slide/thuyết trình/pair programming hoặc người thật tạo nội dung.
+`VALIDATION.md` ghi kiểm chứng nguồn gốc và giới hạn. `C_REVIEW_EVIDENCE.md` tổng hợp câu hỏi phản biện và kết quả đối chiếu ngày 2026-10-29 và lệnh đối chiếu; không có transcript gốc để xác minh hai lượt cũ. Ba kết luận không đủ bằng chứng: “người có nhiều dòng tự viết nhiều nhất”, “net âm là phá code”, “ít commit nghĩa là ít làm/không review”. Cần thông tin template, diff/tests/demo, phân công, review, tài liệu và phỏng vấn; Git không chứng minh báo cáo/slide/thuyết trình/pair programming hoặc người thật tạo nội dung.
 
 Kết luận sử dụng: chuẩn bị câu hỏi với nhóm; repository đã được chọn để làm bài từ ví dụ; phân công của giảng viên, danh tính thật và kết quả chạy chưa được xác nhận. Không dùng thống kê này làm bảng điểm cá nhân.

@@ -32,7 +32,7 @@ Không xác định được tác giả thực của tài liệu/slide qua ngư�
 
 ## 4. Đổi cách hỏi và so sánh
 
-**Giới hạn bằng chứng cũ:** phần dưới là tóm tắt Prompt A/B và Kết quả A/B đã có sẵn khi bắt đầu rà soát, không phải transcript gốc đã xác minh. Không có file transcript độc lập trong analysis-output để chứng minh nguyên văn hay trình tự hai lượt cũ. Không coi đây là hai AI độc lập hoặc phản hồi của người thật. Bằng chứng tự rà soát hiện tại, với prompt, đầu ra, thay đổi và lệnh thật, nằm ở [C_REVIEW_EVIDENCE.md](C_REVIEW_EVIDENCE.md) và [REVIEW_COMMAND_RESULTS.json](REVIEW_COMMAND_RESULTS.json).
+Phần đối chiếu sau sử dụng các bản tóm tắt kết quả phân tích đã được lưu. Chưa có transcript gốc để xác nhận nguyên văn và trình tự hai lượt phân tích ban đầu. Các câu hỏi phản biện và kết quả kiểm tra được tổng hợp trong [C_REVIEW_EVIDENCE.md](C_REVIEW_EVIDENCE.md); số liệu đối chiếu nằm trong [REVIEW_COMMAND_RESULTS.json](REVIEW_COMMAND_RESULTS.json).
 
 **Prompt A:** “Dùng file tree, README và gitlog đã che để mô tả kiến trúc, phân loại vùng hoạt động và thống kê; mọi kết luận kèm path/SHA, không xếp hạng.”
 
@@ -59,13 +59,13 @@ Không xác định được tác giả thực của tài liệu/slide qua ngư�
 
 Nếu chấm theo LOC, A03 dễ bị bất lợi do net âm và người làm tài liệu/offline dễ bị bỏ sót; A05 có thể bị thổi phồng vì init template. Đây là cảnh báo về phương pháp, không là thứ hạng hay kết tội cá nhân.
 
-## 6. Bổ sung kiểm chứng trong phiên hoàn thiện 2026-10-29
+## 6. Bổ sung kiểm chứng trong kết quả kiểm tra ngày 2026-10-29
 
 Đã chạy `git show --format= --numstat` cục bộ cho **cả 132 SHA**. Kết quả khớp bảng gốc năm danh tính, tổng +107.574/−70.832, 99 binary entries. Đây là kiểm số/path bằng lệnh, không phải đọc ngữ nghĩa toàn bộ 132 diff. Bảy commit có dòng numstat bị che trong `gitlog_full.txt`; export không đủ để tự cộng lại mọi số. SHA và kết quả tổng hợp an toàn ở `REVIEW_COMMAND_RESULTS.json`.
 
 **Bằng chứng mới sửa một số cũ:** hợp đường dẫn gốc A01+A05 là 417 (2 và 415, giao 0), không phải 416 như kịch bản cũ tính từ log đã che. Không xuất tên đường dẫn bị che. `merged-identity-stats.json` ghi phép hợp; `prior-provisional-identity-scenario.json` giữ kết quả cũ; `provisional-identity-scenario.json` ghi kết quả đã sửa. Các số khác của bảng gốc được giữ nguyên sau đối chiếu. Mapping vẫn là giả định dựa trên ví dụ PDF, chưa được nhóm xác nhận.
 
-Đối chiếu B1/B3 dùng bản trích xuất đồng hành của PDF trang 6–7. Chưa render trang PDF trực tiếp trong phiên này vì Python hiện có không có thư viện đọc PDF. Không có nội dung hình/bảng mơ hồ cần suy đoán; bảng số và yêu cầu nằm trong bản trích xuất.
+B1/B3 được đối chiếu với hướng dẫn C5.5 trang 6–7. Các khác biệt về LOC so với ví dụ được công bố và chưa đủ dữ liệu để xác định chắc chắn nguyên nhân.
 
 ## 7. Việc cần người thật
 
