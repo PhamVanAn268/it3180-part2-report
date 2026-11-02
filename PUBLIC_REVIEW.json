@@ -1,6 +1,6 @@
 {
   "status": "PASS_SCOPED_PREPUBLICATION_CHECKS",
-  "review_date": "2026-10-29 Asia/Bangkok",
+  "review_date": "2026-11-02 Asia/Bangkok",
   "checks": {
     "allowlist": true,
     "source_evidence_byte_match": true,
@@ -14,7 +14,7 @@
     "sensitive_matches": 0,
     "external_runtime_dependencies": false
   },
-  "limitations": "Known-value and heuristic scan; not proof of absence of all historical secrets or PII. Browser/deployment verification recorded separately. Manifest lists all public files except itself; hashes are integrity evidence, not digital signatures.",
+  "limitations": "Known-value and heuristic scan; not proof of absence of all historical secrets or PII. Student name and ID were explicitly requested by the user; previous-cohort identities remain pseudonymous. Browser/deployment verification recorded separately. Manifest lists all public files except itself; hashes are integrity evidence, not digital signatures.",
   "files": [
     {
       "path": ".gitattributes",
@@ -33,13 +33,13 @@
     },
     {
       "path": "IT3180_Phan2_BaoCao.pdf",
-      "bytes": 344028,
-      "sha256": "21c6440b400490e2c90aa2d02b764a76b351b0aea6fcaf92bcb03a3b6bbee386"
+      "bytes": 164643,
+      "sha256": "412c0ccf95e3c3d1f3e69f9bbcea98c49c0043d835a8dc5e2838cc3b12a5c7b8"
     },
     {
       "path": "README.md",
-      "bytes": 1565,
-      "sha256": "79846b89b0c47d67bbdd27d67d9db57178cd54376c8a724d84177369061de515"
+      "bytes": 1792,
+      "sha256": "22d52ce28cb19d6e4741680c3dd08dac2d71222fc46795822325dfe4eac75687"
     },
     {
       "path": "app.js",
@@ -83,8 +83,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 63541,
-      "sha256": "a0874f397f49342f52731191fdc1fd2e7482b9bf136c5140ed07f7e627e59d7e"
+      "bytes": 63671,
+      "sha256": "697c27568b1fb33c6b4810b793dcd3c2f366343e71a77650653bc2312ff773ae"
     },
     {
       "path": "styles.css",
