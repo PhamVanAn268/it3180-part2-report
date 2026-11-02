@@ -3,7 +3,8 @@
   "review_date": "2026-11-02 Asia/Bangkok",
   "checks": {
     "allowlist": true,
-    "source_evidence_byte_match": true,
+    "numerical_evidence_byte_match": true,
+    "editorial_reports_match_reviewed_view": true,
     "local_links": true,
     "vietnamese_document": true,
     "tables": 14,
@@ -33,13 +34,13 @@
     },
     {
       "path": "IT3180_Phan2_BaoCao.pdf",
-      "bytes": 162800,
-      "sha256": "010318d6c0f5e5c8916462c1cf32c32034dbd8744c3dd5add7eaeeb9e7d6cb62"
+      "bytes": 159480,
+      "sha256": "209ba33a6d5029a6ece974b2a9b72760d7a12fe9200810839d0af88a7ed3d90b"
     },
     {
       "path": "README.md",
-      "bytes": 1792,
-      "sha256": "22d52ce28cb19d6e4741680c3dd08dac2d71222fc46795822325dfe4eac75687"
+      "bytes": 1719,
+      "sha256": "fc86b76e64684f57d3c2424d2888529a6466d105e243fab740dfae287b82c58f"
     },
     {
       "path": "app.js",
@@ -48,13 +49,13 @@
     },
     {
       "path": "evidence/C_REVIEW_EVIDENCE.md",
-      "bytes": 7580,
-      "sha256": "c74dbf9bb4847f838c043e1d8f811bb3a2396851be230198bb893f027f9ca69f"
+      "bytes": 4567,
+      "sha256": "36a78b50cd9ccbc5ab90f5c5f7dd31fe56eda3451d1127992db8693cd2dd4702"
     },
     {
       "path": "evidence/REPO_ANALYSIS.md",
-      "bytes": 20292,
-      "sha256": "b74cc162d0ed0a1df10ff260b222974d41e3bae251f26bd35f5ba0d3eba97d9a"
+      "bytes": 20019,
+      "sha256": "f7e009e262e53ae7726c59856fa077b33056e5e4559777240a2c26b84f0eb37b"
     },
     {
       "path": "evidence/REVIEW_COMMAND_RESULTS.json",
@@ -63,8 +64,8 @@
     },
     {
       "path": "evidence/VALIDATION.md",
-      "bytes": 9188,
-      "sha256": "9fe3fee4a542b51372b2bcfe8e5fdc46b508ba4e2008c2859d13e43c5ddc850a"
+      "bytes": 8842,
+      "sha256": "11256be9233451db512c34bb9db8c8576527c613779ef086b62fce42b3633a5d"
     },
     {
       "path": "evidence/author-stats.json",
@@ -83,8 +84,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 63671,
-      "sha256": "697c27568b1fb33c6b4810b793dcd3c2f366343e71a77650653bc2312ff773ae"
+      "bytes": 59893,
+      "sha256": "89b87aa53ef5d289f69b392167f5630e40571d713ff5363bdcdacf059823a345"
     },
     {
       "path": "styles.css",
